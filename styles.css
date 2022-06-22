@@ -1,0 +1,255 @@
+:root {
+    --mainColor:#eaeaea;
+    --secondaryColor: #fff;
+
+    --borderColor:#c1c1c1;
+
+    --mainText: black;
+    --secondaryText: #4b5156;
+
+    --themeBorder: #24292e;
+}
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    color: var(--mainText);
+    font-family: 'Eczar', serif;
+}
+
+p, li, input, label, span, textarea {
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(221, 77, 221);
+}
+
+ul{
+    list-style: none;
+}
+
+h1 { font-size: 56px; }
+h2 { font-size: 56px; }
+h3 { font-size: 56px; }
+h4 { font-size: 56px; }
+h5 { font-size: 35px; }
+h6 { font-size: 56px; }
+
+
+/* section tags */
+.s1 {
+    background-color: var(--mainColor);
+    border-color: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
+
+
+.s2 {
+    background-color: var(--secondaryColor);
+    border-color: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
+
+/* Divs */
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.wrapper {
+    display: grid;
+    text-align: center;
+    align-content: center;
+}
+
+
+
+.intro-wrapper {
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
+/* 
+    create a boxshadow generator  */
+     
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75); 
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        'nav-wrapper nav-wrapper' 
+        'left-column right-column'
+        
+    ;
+}
+
+
+/* NAVIGATION CUSTOMIZING */
+
+.nav-wrapper {
+    grid-area: nav-wrapper;
+    border-bottom: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainColor);
+    border-radius: 5px 5px 0 0;
+   
+}
+/* Customizations for the left column */
+.left-column {
+    grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+#profile_pic {
+    display: block;
+    margin: 0 auto;
+    
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 2px solid var(--borderColor);
+}
+
+/* Color mode customization */
+
+.color-dot {
+    height: 30px;
+    width: 30px;
+    background-color:black;
+    border-radius: 50%;
+
+    margin: 5px;
+    border: 2px solid var(--themeBorder);
+
+
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+    cursor: pointer;
+}
+
+.color-dot:hover {
+    border-width: 5px;
+}
+
+#light-mode {
+    background-color: #fff;
+
+}
+
+#dark-mode {
+    background-color: rgb(8, 6, 3);
+    
+}
+
+
+#fun-mode {
+    background-color: rgb(123, 55, 116);
+    
+}
+
+
+
+#color-mode-wrapper {
+    /* display flex automatically inlines the property */
+    display: flex; 
+    justify-content: center;
+}
+
+
+/* settings note customization */
+#settings-note {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+
+}
+
+
+/* customizations for the right column */
+
+.right-column {
+    grid-area: right-column;
+    
+}
+
+/* Contact Navigation Customizing */
+
+#navigation {
+    margin: 0;
+    padding: 10px;
+}
+
+
+#navigation li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
+/* ios dots customization */
+
+.ios-wrapper {
+    display: flex;
+    padding: 10px;
+}
+
+
+#ios-1 {
+    background-color: #FC6058;
+}
+
+#ios-2 {
+    background-color: #FEC02F;
+}
+
+#ios-3 {
+    background-color: #2ACA3E;
+}
+
+.browser-dot {
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+    
+    
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+
+
+/* Helps the website look mobile respinsive */
+@media screen and (max-width: 1200px) {
+    .main-container{
+        width: 95%;
+        
+    }    
+}
