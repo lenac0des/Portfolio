@@ -354,6 +354,7 @@ h6 { font-size: 56px; }
     grid-template-columns: repeat(auto-fit, 320px);
     gap: 20px;
     justify-content: center;
+    padding-bottom: 60px;
 }
 
 .thumbnail{
@@ -384,12 +385,8 @@ h6 { font-size: 56px; }
 
 .post-intro{
     color: #4b5156;
-    font-size: 16px;
+    font-size: 14px;
 }
-
-
-
-
 
 
 
