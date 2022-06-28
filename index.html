@@ -8,6 +8,12 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap" rel="stylesheet">
     
+
+
+ 
+
+<link id="theme-style" rel="stylesheet" href="">
+
     <title>Ellena's Portfolio</title>
 </head>
 <body>
@@ -38,9 +44,9 @@
                 <!-- light mode dark mode  what I want is a gradient style dark mode-->
                 
                 <div id="color-mode-wrapper"> 
-                    <div id="light-mode" class="color-dot"></div>
-                    <div id="dark-mode" class="color-dot"></div>
-                    <div id="fun-mode" class="color-dot"></div>
+                    <div data-mode="light" id="light-mode" class="color-dot"></div>
+                    <div data-mode="dark" id="dark-mode" class="color-dot"></div>
+                    <div data-mode="fun" id="fun-mode" class="color-dot"></div>
 
                 </div>
                     <p id="settings-note">Color theme will be saved for <br /> your next visit</p>
@@ -129,7 +135,7 @@
                     <div class="post-preview">
                         <h6 class="post-title">Counter</h6>
                         <p class="post-intro">This will be the description of the project.</p>
-                        <a href="#">Read More</a>
+                        <a href="post.html">Read More</a>
                     </div>
                 </div>
             </div>
@@ -191,5 +197,7 @@
             </form>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
