@@ -57,7 +57,7 @@
                 <div id="preview">
                     <div id="corner-tl" class="corner"></div>
                     <div id="corner-tr" class="corner"></div>
-                    <h3>What I Do</h3>
+                    <h3 class="what-title">What I Do</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, quos? Molestiae vel itaque laborum aliquam neque quibusdam</p>
                     <div id="corner-br" class="corner"></div>
                     <div id="corner-bl" class="corner"></div>
@@ -112,11 +112,11 @@
 					<img id="social-img" src="images/laptop.jpg">
 					<h3>Find me on:</h3>
 
-					<a target="_blank" href="#">LinkdIn</a>
+					<a target="_blank" href="https://www.linkedin.com/in/ellena-jean-abc1234/">LinkdIn</a>
 					<br>
-					<a target="_blank" href="#">GitHub</a>
+					<a target="_blank" href="https://github.com/lenac0des">GitHub</a>
                     <br>
-					<a target="_blank" href="#">Twitter</a>
+					<a target="_blank" href="https://twitter.com/lena_codes95">Twitter</a>
 				</div>
 			</div>
 
@@ -146,9 +146,9 @@
                 <div class="post">
                     <img class="thumbnail" src="images/comingsoon.jpg">
                     <div class="post-preview">
-                        <h6 class="post-title">Landing</h6>
+                        <h6 class="post-title">PassWord Generator</h6>
                         <p class="post-intro">This will be the description of the project.</p>
-                        <a href="#">Read More</a>
+                        <a href="https://lenac0des.github.io/passwordGenerator/">Read More</a>
                     </div>
                 </div>
             </div>
@@ -159,9 +159,9 @@
                 <div class="post">
                     <img class="thumbnail" src="images/comingsoon.jpg">
                     <div class="post-preview">
-                        <h6 class="post-title">TBA</h6>
+                        <h6 class="post-title">Dad Jokes</h6>
                         <p class="post-intro">This will be the description of the project.</p>
-                        <a href="#">Read More</a>
+                        <a href="https://lenac0des.github.io/DadJokes/">Read More</a>
                     </div>
                 </div>
             </div>
@@ -174,7 +174,7 @@
         <div class="main-container">
             <h3 style="text-align: center;">Get In Touch</h3>
 
-            <form id="contact-form">
+            <!-- <form id="contact-form">
                 <label>Name</label>
                 <input class="input-field" type="text" name="name">
 
@@ -194,7 +194,33 @@
 
 
                 <input id="submit-btn" type="submit" value="Send">
-            </form>
+            </form> -->
+
+
+
+            <form id="contact-form" action="https://formsubmit.co/ellenajean@gmail.com" method="POST">
+                
+                
+                
+                <label>Name</label>
+                <input class="input-field" type="text" name="name" placeholder="Enter name">
+
+                
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject" placeholder="Enter subject">
+
+
+                <label>Email</label>
+                <input class="input-field" type="email" name="email" placeholder="Email Address" required>
+
+
+                <input type="hidden" name="_next" value="https://lenac0des.github.io/Portfolio/thankyou.html">
+
+                <label>Message</label>
+                <textarea class="input-field" name="message" placeholder="Write your message here" required></textarea>
+
+                <button id="submit-btn" type="submit">Send</button>
+           </form> 
         </div>
     </section>
 

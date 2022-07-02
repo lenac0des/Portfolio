@@ -32,6 +32,13 @@ h1, h2, h3, h4, h5, h6, strong {
     font-family: 'Eczar', serif;
 }
 
+.what-title {
+    line-height: 50px;
+}
+
+
+
+
 p, li, input, label, span, textarea {
     font-family: 'Fira Sans Condensed', sans-serif;
 }
@@ -264,6 +271,8 @@ h6 { font-size: 56px; }
     background-color: var(--previewBg);
     padding: 15px;
     position: relative;
+    /* height: 200px; */
+    /* overflow: hidden; */
     /* position relative brought the dots out from the outside of the page to the inside of the preview square. when you use position absolute in .corner the parent element needs to me position relative which is in #preview */
 }
 
@@ -387,6 +396,7 @@ h6 { font-size: 56px; }
 .post-title{
     color: black;
     margin: 0;
+    line-height: 50px;
 }
 
 .post-intro{
