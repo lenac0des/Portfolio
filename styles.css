@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, h6, strong {
 
 p, li, input, label, span, textarea {
     font-family: 'Fira Sans Condensed', sans-serif;
+    color: var(--mainText)
 }
 
 
