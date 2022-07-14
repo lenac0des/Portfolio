@@ -20,19 +20,19 @@
 /* Dark galaxy color */
 
 :root {
-    --mainColor:#15202B;
-    --secondaryColor: #192734;
+    --mainColor: #0f0e17;
+    --secondaryColor: black;
 
-    --borderColor:#164D56;
+    --borderColor:#a1a1a1ff;
 
     --mainText: #fff;
     --secondaryText: #eeeeee;
 
     --themeBorder: #fff;
 
-    --previewBg: rgb(25, 39, 52, 0.8);
+    --previewBg: rgb#111213ff;
 
-    --previewShadow: #111921;
+    --previewShadow: #212224ff;
 
-    --buttonColor: #17a2b8; 
+    --buttonColor: rgb(98, 98, 98); 
 }
